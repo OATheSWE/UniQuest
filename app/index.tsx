@@ -1,20 +1,46 @@
-import { Box, Image, Text } from "@mantine/core";
-import React from "react";
-///@ts-ignore
-import classes from './index.module.css';
-import { ImageCollection } from "@/assets";
-import { styles } from "@/src/data";
+import React, { useEffect, useState } from "react";
+import { Onboard, Splash } from "@/src/views";
+import { router } from "expo-router";
 
+const Home = () => {
+  const [showSplash, setShowSplash] = useState(true);
+  const [userType, setUserType] = useState(null);
 
-const home = () => {
+  useEffect(() => {
+    // Set a timer to hide the splash screen after 5 seconds
+    const timer = setTimeout(() => {
+      setShowSplash(false);
+    }, 5000);
+
+    // Clear the timer if the component is unmounted
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (!showSplash) {
+      // Check if "user-type" exists in local storage after splash screen is hidden
+      const storedUserType = localStorage.getItem("user_type");
+      ///@ts-ignore
+      setUserType(storedUserType);
+
+      // Route based on the user type
+      if (storedUserType === "student") {
+        router.replace("/student/supervisors"); // Adjust the route as needed
+      } else if (storedUserType === "lecturer") {
+        router.replace("/supervisor/students"); // Adjust the route as needed
+      }
+    }
+  }, [showSplash, router]);
+
   return (
-      <Box className={`flex items-center justify-center bg-black flex-col h-full w-full overflow-x-hidden ${styles.body}`}>
-        <Text className={`font-semibold text-[20px] ${classes.style}`} ta={`center`} >
-          Open up index.tsx in your app folder to start working on your website, web app or app!
-        </Text>
-        <Image src={ImageCollection.logo} className={`object-cover w-[30%] mt-8`} />
-      </Box>
+    <div>
+      {showSplash ? (
+        <Splash />
+      ) : userType ? null : (
+        <Onboard />
+      )}
+    </div>
   );
 };
 
-export default home;
+export default Home;
