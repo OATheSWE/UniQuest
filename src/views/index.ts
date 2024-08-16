@@ -5,4 +5,5 @@
 
 export * from './SplashScreen';
 export * from './Onboarding Screens';
+export * from './STDash';
 
