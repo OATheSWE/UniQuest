@@ -9,6 +9,8 @@ const checkOLevel = "http://localhost:8000/checkOlevelStatus.php";
 const fetchExam = "http://localhost:8000/fetchExam.php";
 const submitExam = "http://localhost:8000/submitExam.php";
 const allStudents = "http://localhost:8000/allStudents.php";
+const setDPSET = "http://localhost:8000/setDPSET.php";
+const fetchDPSET = "http://localhost:8000/fetchDPSET.php";
 
 
 
@@ -23,6 +25,8 @@ const api = {
     fetchExam,
     submitExam,
     allStudents,
+    setDPSET,
+    fetchDPSET,
 }
 
 export { api };

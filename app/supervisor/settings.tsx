@@ -1,11 +1,11 @@
-import { Exam } from "@/src/views";
+import { DepartmentSettings } from "@/src/views";
 
-const exam = () => {
+const settings = () => {
   return (
     <div className="">
-      <Exam />
+      <DepartmentSettings />
     </div>
   );
 };
 
-export default exam;  
+export default settings;  

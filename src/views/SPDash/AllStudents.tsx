@@ -115,7 +115,7 @@ const AllStudents = () => {
                 className="mb-4 cursor-pointer bg-secondary text-primary rounded-lg"
               >
                 <Text className="font-semibold text-[15px] mb-4">
-                  {student.student_name}<br />{student.student_id}
+                   {student.student_name}<br />{student.student_id}
                 </Text>
                 <Text className="mb-4">Post UTME: {student.score} </Text>
                 <Text className="">Aggregate: {student.aggregate}</Text>
