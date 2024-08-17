@@ -11,7 +11,7 @@ const Contact = () => {
         following channels:
       </Text>
       <Text className="text-lg">
-        <strong>Email:</strong> support@trackr.com.ng
+        <strong>Email:</strong> support@uniquest.com.ng
       </Text>
       <Text className="text-lg">
         <strong>Phone:</strong> +234 808 420 4157
@@ -24,7 +24,7 @@ const Contact = () => {
         Don't hesitate to contact us for any further information or support.
       </Text>
       <Text className="text-center mt-10 text-sm">
-        &copy; {new Date().getFullYear()} Trackr. All rights
+        &copy; {new Date().getFullYear()} UniQuest. All rights
         reserved.
       </Text>
     </div>
