@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['reference'])) {
                 $mail->Port = 587;
 
                 //Recipients
-                $mail->setFrom('osborneosas12@gmail.com', 'Petroleum Training Institute');
+                $mail->setFrom('osborneosas12@gmail.com', 'Federal University Of Petroleum Resources Effurun');
                 $mail->addAddress($email);
 
                 // Content
