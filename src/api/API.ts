@@ -8,6 +8,7 @@ const uploadOLevel = "http://localhost:8000/uploadOLevel.php";
 const checkOLevel = "http://localhost:8000/checkOlevelStatus.php";
 const fetchExam = "http://localhost:8000/fetchExam.php";
 const submitExam = "http://localhost:8000/submitExam.php";
+const allStudents = "http://localhost:8000/allStudents.php";
 
 
 
@@ -21,6 +22,7 @@ const api = {
     checkOLevel,
     fetchExam,
     submitExam,
+    allStudents,
 }
 
 export { api };

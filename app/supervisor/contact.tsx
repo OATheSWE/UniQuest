@@ -29,7 +29,7 @@ const Contact = () => {
         Don't hesitate to contact us for any further information or support.
       </Text>
       <TouchableOpacity>
-        <Button onClick={handleFeedbackClick} className="bg-secondary text-primary">
+        <Button onClick={handleFeedbackClick} className="bg-secondary text-primary" size="md">
           Give Feedback
         </Button> 
       </TouchableOpacity>

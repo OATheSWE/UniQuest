@@ -1,9 +1,9 @@
-import { UploadOLevel } from "@/src/views";
+import { AllStudents } from "@/src/views";
 
 const upload = () => {
   return (
     <div className="">
-      <UploadOLevel />
+      <AllStudents />
     </div>
   );
 };
