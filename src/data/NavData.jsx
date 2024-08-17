@@ -7,8 +7,9 @@ export const STLinks = [
   ];
 
   export const SPLinks = [
-    { text: "Settings", href: "/supervisor/setting" },
+    { text: "Settings", href: "/supervisor/settings" },
+    { text: "Students", href: "/supervisor/students" },
     { text: "About Us", href: "/supervisor/about" },
     { text: "Contact Us", href: "/supervisor/contact" },
-    { text: "Logout", href: "/supervisor/students" },
+    { text: "Logout", href: "/supervisor/settings" },
   ];
