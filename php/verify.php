@@ -95,7 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['reference'])) {
 }
 
 // Redirect to the order script page
-header("Location: http://localhost:8081/auth/login");
+header("Location: uniquest.trackr.com.ng/auth/login");
 exit;
 
 pg_close($connection);

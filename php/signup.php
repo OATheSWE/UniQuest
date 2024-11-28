@@ -24,7 +24,7 @@ if ($user_type === 'student') {
     // Redirect to Paystack for payment
     $amount = 5000; // Amount in kobo (5000 naira)
     $paystack_url = "https://api.paystack.co/transaction/initialize";
-    $callback_url = "http://localhost:8000/verify.php";
+    $callback_url = "php/verify.php";
     $payment_data = [
         'email' => $email,
         'amount' => $amount,

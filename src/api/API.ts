@@ -1,16 +1,16 @@
 
 
-const login = "http://localhost:8000/login.php";
-const signup = "http://localhost:8000/signup.php";
-const getName = "http://localhost:8000/getName.php";
-const verify = "http://localhost:8000/verify.php";
-const uploadOLevel = "http://localhost:8000/uploadOLevel.php";
-const checkOLevel = "http://localhost:8000/checkOlevelStatus.php";
-const fetchExam = "http://localhost:8000/fetchExam.php";
-const submitExam = "http://localhost:8000/submitExam.php";
-const allStudents = "http://localhost:8000/allStudents.php";
-const setDPSET = "http://localhost:8000/setDPSET.php";
-const fetchDPSET = "http://localhost:8000/fetchDPSET.php";
+const login = "php/login.php";
+const signup = "php/signup.php";
+const getName = "php/getName.php";
+const verify = "php/verify.php";
+const uploadOLevel = "php/uploadOLevel.php";
+const checkOLevel = "php/checkOlevelStatus.php";
+const fetchExam = "php/fetchExam.php";
+const submitExam = "php/submitExam.php";
+const allStudents = "php/allStudents.php";
+const setDPSET = "php/setDPSET.php";
+const fetchDPSET = "php/fetchDPSET.php";
 
 
 
